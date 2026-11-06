@@ -8,3 +8,6 @@
 # 題目 16：列出喜歡的點心
 # 建立一個 snacks 清單，放入三種你喜歡的點心。
 # 使用 for 逐項印出清單內容，每種點心各佔一行。
+snacks = ["蛋糕","餅乾","海苔"]
+for snack in snacks:
+    print(snack)
