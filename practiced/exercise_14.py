@@ -7,3 +7,5 @@
 #
 # 題目 14：印出一段數字
 # 使用 for 和 range()，依序印出 1、2、3、4、5，每個數字各佔一行。
+for number in range(1, 6):
+    print(number)
