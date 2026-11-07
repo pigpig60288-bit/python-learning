@@ -8,3 +8,6 @@
 # 題目 25：找出最高和最低分
 # 建立 scores 清單，放入 72、88、91、65。
 # 使用 max() 和 min() 分別印出最高分與最低分。
+scores = [72 , 88 , 91 , 65]
+print(max(scores))
+print(min(scores))

@@ -10,3 +10,8 @@
 # 題目 27：跳過零分
 # 使用 scores 清單 [10, 0, 8, 0, 6]。
 # 使用 for 和 continue 跳過 0，只印出非零分數。
+scores = [10, 0, 8, 0, 6]
+for score in scores:
+    if score == 0:
+        continue
+    print(score)

@@ -9,3 +9,7 @@
 # 題目 17：找出高分
 # 使用 scores 清單，內容為 [72, 85, 91, 64, 80]。
 # 使用 for 和 if，逐一檢查分數，只印出大於或等於 80 的分數。
+scores = [72, 85, 91, 64, 80]
+for score in scores:
+    if score >= 80:
+        print(score)

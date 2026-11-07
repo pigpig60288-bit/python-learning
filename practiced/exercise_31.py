@@ -21,3 +21,19 @@
 # 再印出「本次餐費已達 500 元」，否則印出「本次餐費未達 500 元」。
 #
 # 範例：輸入 120、180、0 後，清單中應有 120 和 180，總額是 300 元。
+expenses = []
+expense = 10
+while expense > 0:
+    expense = int(input("請問今天的餐費幾元?"))
+    if expense == 0:
+        break
+    else:
+        expenses.append(expense)
+if (len(expenses)) > 0:
+    print(expenses , f"總共{sum(expenses)}元")
+    if sum(expenses) >= 500:
+        print("本次餐費已達500元")
+    else:
+        print("本次餐費未達500元")
+else:
+    print("尚無餐費紀錄")

@@ -13,3 +13,12 @@
 # 輸入結束後，使用 len() 和 sum() 計算記錄了幾天、總共運動幾分鐘，
 # 再用 f-string 印出這兩個結果。
 # 假設使用者只會輸入 0 或正整數。
+minutes = []
+minute = 20
+while minute != 0:
+    minute = int(input("請問你運動多久?"))
+    if minute > 0:
+        minutes.append(minute)
+    else:
+        break
+print(f"共紀錄{len(minutes)}天，合計運動{sum(minutes)}分鐘。")

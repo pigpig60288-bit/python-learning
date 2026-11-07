@@ -7,3 +7,8 @@
 # 題目 21：檢查文具清單
 # 建立一個 stationery 清單，放入幾種文具。
 # 使用 in 檢查「鉛筆」是否在清單裡，並用 if/else 印出清楚的結果。
+stationery = ["三角尺" , "鉛筆" , "圓規"]
+if "鉛筆" in stationery:
+    print("鉛筆在文具盒裡")
+else:
+    print("鉛筆不在文具盒裡")
