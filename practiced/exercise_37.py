@@ -13,3 +13,9 @@
 # 題目 37：建立寵物資料
 # 定義 Pet 類別，使用 __init__ 接收一個 name，並存入物件的 self.name。
 # 建立一個名字為「小白」的 Pet 物件，印出它的 name。
+class Pet:
+    def __init__(self, name):
+        self.name = name
+
+pet = Pet("小白")
+print(pet.name)
