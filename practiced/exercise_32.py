@@ -12,3 +12,6 @@
 # 使用切片取得索引 1 到索引 3 的隊員（包含索引 1，不包含索引 4），
 # 將結果存入 selected_players，並印出 selected_players。
 # 預期輸出：['小美', '小智', '小華']
+players = ["小安", "小美", "小智", "小華", "小文"]
+selected_players = players[1:4]
+print(selected_players)
