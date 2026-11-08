@@ -17,3 +17,12 @@
 # feed 方法接收 food 參數，印出「○○吃了○○。」，
 # 第一個○○是寵物名字，第二個○○是食物名稱。
 # 建立一隻寵物，呼叫 feed 方法並傳入一種食物。
+class Pet:
+    def __init__(self, name):
+        self.name = name
+
+    def feed(self, food):
+        print(f"{self.name}吃了{food}")
+
+pet = Pet("小乖")
+pet.feed("鳥飼料")
