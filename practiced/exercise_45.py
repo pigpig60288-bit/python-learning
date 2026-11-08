@@ -19,3 +19,15 @@
 # pages_read 大於或等於 goal 時，印出讀者名稱和「已達標」，
 # 否則印出讀者名稱和「尚未達標」。
 # 建立一位已讀 25 頁的讀者，呼叫 check_goal 並傳入一個目標頁數。
+class Reader:
+    def __init__(self, name, pages_read):
+        self.name = name
+        self.pages_read = pages_read
+
+    def check_goal(self, goal):
+        if self.pages_read >= goal:
+            print(f"{self.name}已達標")
+        else:
+            print(f"{self.name}尚未達標")
+reader = Reader("林昀昀", 25)
+reader.check_goal(20)
