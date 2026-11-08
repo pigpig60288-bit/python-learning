@@ -11,3 +11,8 @@
 # 題目 36：建立飲料分類
 # 定義一個 Drink 類別，並設定類別屬性 category 為「飲料」。
 # 建立一個 Drink 物件存入 my_drink，印出 my_drink.category。
+class Drink:
+    category = "飲料"
+
+my_drink = Drink()
+print(my_drink.category)
