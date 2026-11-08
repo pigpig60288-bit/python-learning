@@ -15,3 +15,9 @@
 # 並分別存成物件屬性。
 # 建立一本書，書名為「雲朵旅行」，作者為「小林」，
 # 分別印出這本書的 title 和 author。
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+book = Book("雲朵旅行", "小林")
+print(book.title, book.author)
