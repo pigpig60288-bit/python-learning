@@ -18,3 +18,14 @@
 # 新增 check_water 方法：water_level 小於 3 時印出植物名稱和「需要澆水」，
 # 否則印出植物名稱和「目前水分足夠」。
 # 建立一株 water_level 為 2 的植物，呼叫 check_water。
+class Plant:
+    def __init__(self, name, water_level):
+        self.name = name
+        self.water_level = water_level
+    def check_water(self):
+        if self.water_level < 3:
+            print(f"{self.name}需要澆水")
+        else:
+            print(f"{self.name}目前水分足夠")
+plant = Plant("菠菜", 2)
+plant.check_water()
