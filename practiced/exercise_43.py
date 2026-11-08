@@ -17,3 +17,13 @@
 # 定義 Runner 類別，__init__ 接收 name，並將 miles 設為 0。
 # 新增 add_miles 方法，接收 miles 參數並累加到物件的 miles 屬性。
 # 建立一位跑者，呼叫 add_miles(2)，再印出跑者的 miles。
+class Runner:
+    def __init__(self, name):
+        self.name = name
+        self.miles = 0
+
+    def add_miles(self, miles):
+        self.miles += miles
+runner = Runner("小明")
+runner.add_miles(2)
+print(runner.name, runner.miles)
