@@ -17,3 +17,13 @@
 # 定義 Pet 類別，使用 __init__ 儲存 name，並建立空的 toys 清單。
 # 新增 add_toy 方法，接收 toy 參數並加到 toys 清單。
 # 建立一隻寵物，呼叫 add_toy 加入「球」，再印出它的 toys 清單。
+class Pet:
+    def __init__(self, name):
+        self.name = name
+        self.toys = []
+
+    def add_toy(self, toy):
+        self.toys.append(toy)
+pet = Pet("小乖")
+pet.add_toy("球")
+print(pet.toys)
