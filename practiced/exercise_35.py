@@ -10,3 +10,7 @@
 # 定義 show_price 函式，讓它接收一個價格參數，
 # 並印出「商品價格是○元。」（○換成傳入的數字）。
 # 使用不同的兩個價格呼叫函式各一次。
+def show_price(price):
+    print(f"商品價格是{price}元。" )
+show_price(price=520)
+show_price(price=550)
