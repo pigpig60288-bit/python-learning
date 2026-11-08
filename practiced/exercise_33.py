@@ -9,3 +9,6 @@
 # 建立 places 清單，依序放入「海邊」、「森林」、「美術館」、「夜市」、「公園」。
 # 使用切片取得索引 2 和 3 的景點，存入 selected_places，並印出它。
 # 預期輸出：['美術館', '夜市']
+places = ["海邊" , "森林" , "美術館" , "夜市" , "公園"]
+selected_places = places[2:4]
+print(selected_places)
