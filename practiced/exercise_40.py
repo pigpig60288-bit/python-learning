@@ -19,3 +19,17 @@
 # 新增 show_result 方法：分數大於或等於 60 時印出「○○及格」，
 # 否則印出「○○還要加油」（○換成學生姓名）。
 # 建立兩位分數不同的學生物件，分別呼叫 show_result。
+class Student:
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+
+    def show_result(self):
+        if self.score >= 60:
+            print(f"{self.name}及格")
+        else:
+            print(f"{self.name}還要加油")
+student =Student("阿毛咪", 100)
+student.show_result()
+student =Student("莊先生", 59)
+student.show_result()
