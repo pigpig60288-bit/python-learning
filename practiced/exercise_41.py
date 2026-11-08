@@ -13,3 +13,9 @@
 # 定義 Robot 類別，新增一個 greet 方法，讓它印出啟動問候訊息。
 # 建立一個 Robot 物件存入 my_robot，並呼叫它的 greet 方法一次。
 # 執行程式時，確認問候訊息會出現。
+class Robot:
+    def greet(self):
+        print("您好")
+
+my_robot = Robot()
+my_robot.greet()
