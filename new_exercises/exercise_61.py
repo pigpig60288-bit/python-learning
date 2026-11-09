@@ -18,7 +18,9 @@ for student in students:
 
 '''
 題目 61：列出需要充電的裝置
-請依照題意完成程式。
+定義 Device 類別，在 __init__ 中儲存裝置名稱 name 和電量 level。
+新增 show_status 方法：電量低於 20 時印出「名稱 需要充電」，否則印出「名稱 已充電」。
+建立 devices 清單並逐一呼叫每個裝置的 show_status。
 
 標準輸入範例 1：
 

@@ -18,7 +18,8 @@ for student in students:
 
 '''
 題目 63：增加花盆中的花朵數
-請依照題意完成程式。
+定義 Flower 類別，在 __init__ 中儲存花朵數量 count。
+建立 flowers 清單，用 for 迴圈走訪每個 Flower 物件並累加 count，最後印出總花朵數。
 
 標準輸入範例 1：
 

@@ -19,7 +19,9 @@ print(total)
 
 '''
 題目 85：找出空閒且有設備的教室
-請依照題意完成程式。
+定義 Classroom 類別，儲存教室名稱 name、是否空閒 is_available 和是否有設備 has_equipment。
+新增 show_status 方法：兩個條件都為 True 時印出「名稱 可使用」；沒有設備時印出「名稱 設備不足」；不空閒時印出「名稱 不可使用」。
+建立 classrooms 清單並逐一呼叫每個教室的 show_status。
 
 標準輸入範例 1：
 
@@ -27,7 +29,7 @@ classrooms = [Classroom("A101", True, True), Classroom("B205", True, False)]
 
 預期輸出 1：
 
-A101 可使用\nB205 已滿
+A101 可使用\nB205 設備不足
 
 標準輸入範例 2：
 

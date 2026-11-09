@@ -18,7 +18,9 @@ for student in students:
 
 '''
 題目 73：記錄並檢查參加者
-請依照題意完成程式。
+定義 Participant 類別，在 __init__ 中儲存參加者姓名 name 和是否已參加 attended。
+新增 show_status 方法：attended 為 True 時印出「姓名 已參加」，否則印出「姓名 未參加」。
+建立 participants 清單並逐一呼叫每個物件的 show_status。
 
 標準輸入範例 1：
 

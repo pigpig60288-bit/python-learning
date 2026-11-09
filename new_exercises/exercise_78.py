@@ -19,7 +19,9 @@ print(total)
 
 '''
 題目 78：統計完成與未完成任務
-請依照題意完成程式。
+定義 Task 類別，在 __init__ 中儲存任務名稱 name 和完成狀態 is_done。
+新增 show_status 方法：依 is_done 印出「任務名稱 已完成」或「任務名稱 未完成」。
+建立 tasks 清單並逐一呼叫每個任務的 show_status。
 
 標準輸入範例 1：
 

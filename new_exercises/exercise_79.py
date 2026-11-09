@@ -19,7 +19,9 @@ print(total)
 
 '''
 題目 79：避免重複加入收藏景點
-請依照題意完成程式。
+定義 Spot 類別，在 __init__ 中儲存景點名稱 name 和是否已收藏 is_favorite。
+新增 show_status 方法：已收藏時印出「名稱 已收藏」，否則印出「名稱 可加入收藏」。
+建立 spots 清單並逐一呼叫每個景點的 show_status。
 
 標準輸入範例 1：
 

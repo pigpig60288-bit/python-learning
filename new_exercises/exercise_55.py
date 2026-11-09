@@ -18,7 +18,9 @@ for item in items:
 
 '''
 題目 55：檢查電池電量
-請依照題意完成程式。
+定義 Battery 類別，使用 __init__ 儲存電量 level。
+新增 check_level 方法：電量低於 20 時印出「電量偏低」，否則印出「電量足夠」。
+建立 Battery 物件並呼叫 check_level。
 
 標準輸入範例 1：
 

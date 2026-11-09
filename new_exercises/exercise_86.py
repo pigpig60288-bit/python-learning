@@ -19,11 +19,15 @@ print(total)
 
 '''
 題目 86：使用倉庫庫存
-請依照題意完成程式。
+定義 Warehouse 類別，在 __init__ 中儲存倉庫名稱 name 和庫存 quantity。
+新增 use_stock 方法，接收使用數量並更新庫存；範例中每個倉庫都使用 3 個庫存。
+新增 show_stock 方法，印出「倉庫名稱 目前剩 數量」。
 
 標準輸入範例 1：
 
-warehouse = Warehouse("A區", 12)
+warehouse = Warehouse("A區", 15)
+warehouse.use_stock(3)
+warehouse.show_stock()
 
 預期輸出 1：
 
@@ -31,7 +35,9 @@ A區 目前剩 12
 
 標準輸入範例 2：
 
-warehouse = Warehouse("B區", 7)
+warehouse = Warehouse("B區", 10)
+warehouse.use_stock(3)
+warehouse.show_stock()
 
 預期輸出 2：
 

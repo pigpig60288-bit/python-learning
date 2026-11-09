@@ -18,7 +18,8 @@ for student in students:
 
 '''
 題目 67：計算書籍總頁數
-請依照題意完成程式。
+定義 Book 類別，在 __init__ 中儲存書名 name 和頁數 pages。
+建立 books 清單，用 for 迴圈逐一讀取每本書的 pages 並累加，最後印出總頁數。
 
 標準輸入範例 1：
 

@@ -18,7 +18,9 @@ for student in students:
 
 '''
 題目 64：確認會員能否借書
-請依照題意完成程式。
+定義 Member 類別，在 __init__ 中儲存會員名稱 name 和目前借閱本數 borrowed_count。
+新增 check_borrow 方法：借閱本數大於 0 時印出「名稱 可以借書」，否則印出「名稱 不能借書」。
+建立 Member 物件並呼叫 check_borrow。
 
 標準輸入範例 1：
 

@@ -18,7 +18,9 @@ for student in students:
 
 '''
 題目 68：找出可參加活動的隊員
-請依照題意完成程式。
+定義 Member 類別，在 __init__ 中儲存隊員名稱 name 和是否符合參加資格 eligible。
+新增 show_status 方法：eligible 為 True 時印出「名稱 可參加」，否則印出「名稱 不可參加」。
+建立 members 清單並逐一呼叫每位隊員的 show_status。
 
 標準輸入範例 1：
 

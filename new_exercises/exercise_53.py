@@ -18,11 +18,14 @@ for item in items:
 
 '''
 題目 53：介紹寵物品種
-請依照題意完成程式。
+定義 Pet 類別，並在 __init__ 中儲存寵物名稱 name。
+新增 introduce 方法，使用方法參數接收品種，並印出「名稱 是 品種」。
+建立 Pet 物件後呼叫 introduce，將範例中的品種傳給方法。
 
 標準輸入範例 1：
 
 pet = Pet("旺財")
+pet.introduce("貓")
 
 預期輸出 1：
 
@@ -31,6 +34,7 @@ pet = Pet("旺財")
 標準輸入範例 2：
 
 pet = Pet("米豆")
+pet.introduce("狗")
 
 預期輸出 2：
 

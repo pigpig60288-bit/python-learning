@@ -18,7 +18,8 @@ for student in students:
 
 '''
 題目 71：顯示餐點資訊
-請依照題意完成程式。
+定義 Meal 類別，在 __init__ 中儲存餐點名稱 name 和價格 price。
+新增 show_info 方法，印出「餐點名稱：價格 元」。建立 Meal 物件後呼叫此方法。
 
 標準輸入範例 1：
 

@@ -18,7 +18,9 @@ for student in students:
 
 '''
 題目 65：統計有庫存的商品
-請依照題意完成程式。
+定義 Product 類別，在 __init__ 中儲存商品名稱 name 和庫存數量 quantity。
+新增 show_status 方法：庫存大於 0 時印出「名稱 有庫存」，否則印出「名稱 尚未補貨」。
+建立 products 清單並逐一呼叫每個商品的 show_status。
 
 標準輸入範例 1：
 

@@ -18,7 +18,8 @@ for item in items:
 
 '''
 題目 51：顯示樂器名稱
-請依照題意完成程式。
+定義 Instrument 類別，並在 __init__ 中儲存樂器名稱 name。
+新增 show_name 方法，印出樂器名稱。建立 Instrument 物件後呼叫這個方法。
 
 標準輸入範例 1：
 

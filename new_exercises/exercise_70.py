@@ -18,7 +18,9 @@ for student in students:
 
 '''
 題目 70：計算已完成作業的分數
-請依照題意完成程式。
+定義 Grade 類別，在 __init__ 中儲存學生姓名 name 和分數 score。
+新增 show_status 方法：分數至少 80 分時印出「姓名 已完成」，否則印出「姓名 未完成」。
+建立 homework 清單並逐一呼叫每個 Grade 物件的 show_status。
 
 標準輸入範例 1：
 
@@ -33,6 +35,5 @@ homework = [Grade("小華", 88), Grade("小美", 70)]
 homework = [Grade("阿強", 95), Grade("志明", 60)]
 
 預期輸出 2：
-
-阿強 已完成\n志明 已完成
+阿強 已完成\n志明 未完成
 '''

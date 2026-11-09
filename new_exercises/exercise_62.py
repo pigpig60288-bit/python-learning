@@ -18,7 +18,9 @@ for student in students:
 
 '''
 題目 62：列出收藏的書名
-請依照題意完成程式。
+定義 Book 類別，在 __init__ 中儲存書名 name 和頁數 pages。
+新增 show_info 方法，印出「書名 頁數」。
+建立 books 清單並用 for 迴圈逐一呼叫每本書的 show_info。
 
 標準輸入範例 1：
 

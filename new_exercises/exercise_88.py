@@ -19,7 +19,8 @@ print(total)
 
 '''
 題目 88：統計已完成的課程
-請依照題意完成程式。
+定義 Course 類別，在 __init__ 中儲存課程名稱 name 和完成狀態 is_done。
+走訪 courses 清單，計算 is_done 為 True 的課程數量，最後印出「已完成課程：數量 門」。
 
 標準輸入範例 1：
 
@@ -27,7 +28,7 @@ courses = [Course("數學", True), Course("英文", False)]
 
 預期輸出 1：
 
-數學 已完成\n英文 未完成
+已完成課程：1 門
 
 標準輸入範例 2：
 
@@ -35,5 +36,5 @@ courses = [Course("歷史", True), Course("地理", True)]
 
 預期輸出 2：
 
-歷史 已完成\n地理 已完成
+已完成課程：2 門
 '''

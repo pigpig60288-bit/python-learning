@@ -18,11 +18,15 @@ for item in items:
 
 '''
 題目 54：記錄游泳距離
-請依照題意完成程式。
+定義 Swimmer 類別，在 __init__ 中儲存名字 name，並將游泳距離 distance 設為 0。
+新增 add_distance 方法，接收距離並累加到 distance；再新增 show_distance 方法印出目前總距離。
+建立 Swimmer 物件後，依範例呼叫 add_distance，再呼叫 show_distance。
 
 標準輸入範例 1：
 
 swimmer = Swimmer("小安")
+swimmer.add_distance(8)
+swimmer.show_distance()
 
 預期輸出 1：
 
@@ -31,6 +35,8 @@ swimmer = Swimmer("小安")
 標準輸入範例 2：
 
 swimmer = Swimmer("阿傑")
+swimmer.add_distance(6)
+swimmer.show_distance()
 
 預期輸出 2：
 

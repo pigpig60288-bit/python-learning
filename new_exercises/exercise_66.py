@@ -18,7 +18,9 @@ for student in students:
 
 '''
 題目 66：管理社團活動
-請依照題意完成程式。
+定義 Activity 類別，在 __init__ 中儲存活動名稱 name 和報名人數 participants。
+新增 show_info 方法，印出「活動：名稱，報名人數 人數」。
+建立 Activity 物件並呼叫 show_info。
 
 標準輸入範例 1：
 
