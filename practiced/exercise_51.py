@@ -37,3 +37,11 @@ instrument = Instrument("大提琴")
 
 大提琴
 '''
+
+class Instrument:
+    def __init__(self, name):
+        self.name = name
+    def show_name(self):
+        print(f"{self.name}")
+instrument = Instrument("鋼琴")
+instrument.show_name()
