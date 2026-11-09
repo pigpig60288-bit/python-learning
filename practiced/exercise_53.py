@@ -37,3 +37,12 @@ pet.introduce("狗")
 
 米豆 是 狗
 '''
+class Pet:
+    def __init__(self, name):
+        self.name = name
+
+    def introduce(self, species):
+        self.species = species
+        print(f"{self.name}是{self.species}")
+pet = Pet("昀昀")
+pet.introduce("小狗")
