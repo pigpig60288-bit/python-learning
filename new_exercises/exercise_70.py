@@ -1,19 +1,34 @@
-# 教學：可以在同一個 for 迴圈中篩選物件並累加數值。
-# 範例：
-# class Box:
-#     def __init__(self, color, blocks):
-#         self.color = color
-#         self.blocks = blocks
-#
-# boxes = [Box("紅", 3), Box("藍", 5)]
-# total = 0
-# for box in boxes:
-#     if box.color == "紅":
-#         total += box.blocks
-# print(total)
-# 只有紅色箱子的 blocks 會被加總。
-#
-# 題目 70：計算已完成作業的分數
-# 定義 Assignment 類別，使用 __init__ 儲存 completed 和 points。
-# 建立至少三個 Assignment 物件放入 assignments 清單。
-# 用 for 迴圈只累加 completed 為 True 的作業 points，最後印出總分。
+'''
+教學：計數與條件判斷可用來統計哪些作業已完成。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 70：計算已完成作業的分數
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+homework = [Grade("小華", 88), Grade("小美", 70)]
+
+
+預期輸出 1：
+
+小華 已完成\n小美 未完成
+
+
+標準輸入範例 2：
+
+homework = [Grade("阿強", 95), Grade("志明", 60)]
+
+
+預期輸出 2：
+
+阿強 已完成\n志明 已完成
+'''

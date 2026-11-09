@@ -1,17 +1,34 @@
-# 教學：物件方法可以從多個屬性計算一個新數值並印出。
-# 範例：
-# class Rectangle:
-#     def __init__(self, width, height):
-#         self.width = width
-#         self.height = height
-#
-#     def show_area(self):
-#         print(self.width * self.height)
-#
-# Rectangle(3, 4).show_area()
-# 方法使用物件的兩項資料完成乘法。
-#
-# 題目 81：計算商品總價
-# 定義 Product 類別，使用 __init__ 儲存 name、price 和 quantity。
-# 新增 show_total 方法，計算 price 乘以 quantity 並印出商品名稱和總價。
-# 建立一個 Product 物件並呼叫 show_total。
+'''
+教學：物件可保存商品資訊，最後用總和計算商品總價。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 81：計算商品總價
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+items = [Item("筆記本", 30), Item("原子筆", 20)]
+
+
+預期輸出 1：
+
+總價：50 元
+
+
+標準輸入範例 2：
+
+items = [Item("資料夾", 45), Item("白板筆", 25)]
+
+
+預期輸出 2：
+
+總價：70 元
+'''

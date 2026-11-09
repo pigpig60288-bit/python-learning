@@ -1,16 +1,34 @@
-# 教學：__init__ 可以接收多個資料，分別存成物件屬性。
-# 之後可用「物件.屬性名稱」讀取各項資料。
-# 範例：
-# class Desk:
-#     def __init__(self, material, drawers):
-#         self.material = material
-#         self.drawers = drawers
-#
-# desk = Desk("木頭", 3)
-# print(desk.material)
-# print(desk.drawers)
-# 這個物件分別保存材質和抽屜數。
-#
-# 題目 52：記錄電影資料
-# 定義 Movie 類別，使用 __init__ 儲存 title 和 year。
-# 建立一部電影，印出它的 title 和 year。
+'''
+教學：__init__ 可以接收多個參數，方便把資料儲存在物件中。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 52：記錄電影資料
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+movie = Movie("星際大戰", 2024)
+
+
+預期輸出 1：
+
+電影：星際大戰（2024）
+
+
+標準輸入範例 2：
+
+movie = Movie("阿凡達", 2009)
+
+
+預期輸出 2：
+
+電影：阿凡達（2009）
+'''

@@ -1,17 +1,34 @@
-# 教學：兩個累加器可以在同一個迴圈中分別記錄不同類別的數量。
-# 範例：
-# numbers = [2, 9, 4, 12]
-# small = 0
-# large = 0
-# for number in numbers:
-#     if number < 6:
-#         small += 1
-#     else:
-#         large += 1
-# print(small, large)
-# 每個數字只會依條件加入其中一個計數器。
-#
-# 題目 84：統計課程完成狀態
-# 定義 Course 類別，使用 __init__ 儲存 name 和 is_finished。
-# 建立至少四個 Course 物件放入 courses 清單。
-# 用 for 分別計算完成與未完成課程數量，最後印出兩個數量。
+'''
+教學：條件判斷可幫你統計完成與未完成的課程數量。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 84：統計課程完成狀態
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+courses = [Course("數學", True), Course("英文", False)]
+
+
+預期輸出 1：
+
+數學 已完成\n英文 未完成
+
+
+標準輸入範例 2：
+
+courses = [Course("歷史", True), Course("地理", True)]
+
+
+預期輸出 2：
+
+歷史 已完成\n地理 已完成
+'''

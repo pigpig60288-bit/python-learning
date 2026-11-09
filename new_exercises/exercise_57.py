@@ -1,18 +1,34 @@
-# 教學：物件可用清單屬性保存多筆資料，再用 append() 加入新資料。
-# 範例：
-# class Album:
-#     def __init__(self):
-#         self.songs = []
-#
-#     def add_song(self, song):
-#         self.songs.append(song)
-#
-# album = Album()
-# album.add_song("晨光")
-# print(album.songs)
-# songs 清單屬於這個 Album 物件。
-#
-# 題目 57：收集旅行城市
-# 定義 Traveler 類別，建立空的 cities 清單。
-# 新增 add_city 方法，接收城市名稱並加入 cities。
-# 建立一個 Traveler，呼叫方法加入兩個不同城市，再印出 cities。
+'''
+教學：清單可存很多值，走訪它時可以依序處理每一項內容。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 57：收集旅行城市
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+cities = ["台北", "東京", "大阪"]
+
+
+預期輸出 1：
+
+台北\n東京\n大阪
+
+
+標準輸入範例 2：
+
+cities = ["首爾", "札幌", "香港"]
+
+
+預期輸出 2：
+
+首爾\n札幌\n香港
+'''

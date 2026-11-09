@@ -1,17 +1,34 @@
-# 教學：可在物件中保存多個相關屬性，並由方法統一顯示。
-# 範例：
-# class Building:
-#     def __init__(self, name, floors):
-#         self.name = name
-#         self.floors = floors
-#
-#     def show(self):
-#         print(self.name, self.floors)
-#
-# Building("圖書館", 4).show()
-# show 方法可讀取同一物件的多個屬性。
-#
-# 題目 71：顯示餐點資訊
-# 定義 Meal 類別，使用 __init__ 儲存 name 和 price。
-# 新增 show 方法，印出餐點名稱和價格。
-# 建立一個 Meal 物件並呼叫 show。
+'''
+教學：物件可以儲存餐點資訊，然後以方法輸出這些資訊。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 71：顯示餐點資訊
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+meal = Meal("漢堡", 120)
+
+
+預期輸出 1：
+
+漢堡：120 元
+
+
+標準輸入範例 2：
+
+meal = Meal("雞腿飯", 150)
+
+
+預期輸出 2：
+
+雞腿飯：150 元
+'''

@@ -1,19 +1,34 @@
-# 教學：方法可以把參數加入物件清單，也可以用 in 檢查清單是否包含資料。
-# 範例：
-# class Toolbox:
-#     def __init__(self):
-#         self.names = []
-#
-#     def add(self, name):
-#         self.names.append(name)
-#
-# toolbox = Toolbox()
-# toolbox.add("尺")
-# print("尺" in toolbox.names)
-# in 的結果可以放在 if 條件中使用。
-#
-# 題目 73：記錄並檢查參加者
-# 定義 Event 類別，建立空的 attendees 清單。
-# 新增 register 方法，接收姓名並加入清單。
-# 新增 check_attendee 方法，接收姓名並用 in 檢查是否已在清單中，
-# 依檢查結果印出不同訊息。加入一位參加者並檢查一次。
+'''
+教學：可把人名與是否參加的狀態一起存入物件。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 73：記錄並檢查參加者
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+participants = [Participant("小榮", True), Participant("小文", False)]
+
+
+預期輸出 1：
+
+小榮 已參加\n小文 未參加
+
+
+標準輸入範例 2：
+
+participants = [Participant("阿傑", True), Participant("依依", True)]
+
+
+預期輸出 2：
+
+阿傑 已參加\n依依 已參加
+'''

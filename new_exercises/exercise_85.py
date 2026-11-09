@@ -1,17 +1,34 @@
-# 教學：and 可讓篩選條件同時檢查同一物件的兩個屬性。
-# 範例：
-# class Seat:
-#     def __init__(self, near_window, available):
-#         self.near_window = near_window
-#         self.available = available
-#
-# seats = [Seat(True, True), Seat(True, False)]
-# for seat in seats:
-#     if seat.near_window and seat.available:
-#         print("符合")
-# 兩個條件都成立時才會執行 if 裡的程式。
-#
-# 題目 85：找出空閒且有設備的教室
-# 定義 Room 類別，使用 __init__ 儲存 name、available 和 has_projector。
-# 建立至少三個 Room 物件放入 rooms 清單。
-# 用 for 只印出 available 和 has_projector 都為 True 的教室名稱。
+'''
+教學：教室狀態可同時用多個條件判斷是否適合使用。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 85：找出空閒且有設備的教室
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+classrooms = [Classroom("A101", True, True), Classroom("B205", True, False)]
+
+
+預期輸出 1：
+
+A101 可使用\nB205 已滿
+
+
+標準輸入範例 2：
+
+classrooms = [Classroom("C303", False, True), Classroom("D404", True, True)]
+
+
+預期輸出 2：
+
+C303 不可使用\nD404 可使用
+'''

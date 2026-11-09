@@ -1,16 +1,34 @@
-# 教學：方法可以檢查清單中是否有參數指定的項目，再修改清單。
-# 範例：
-# class Box:
-#     def __init__(self):
-#         self.colors = ["綠", "黃"]
-#
-#     def add_color(self, color):
-#         if color not in self.colors:
-#             self.colors.append(color)
-#
-# 這樣相同的顏色不會被重複加入。
-#
-# 題目 79：避免重複加入收藏景點
-# 定義 Traveler 類別，建立空的 places 清單。
-# 新增 save_place 方法：只有傳入的地點不在 places 中時才加入。
-# 建立物件，對同一地點呼叫兩次，再印出 places 確認沒有重複項目。
+'''
+教學：重複資料可用條件判斷避免重複加入。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 79：避免重複加入收藏景點
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+spots = [Spot("日月潭", False), Spot("九份", True)]
+
+
+預期輸出 1：
+
+日月潭 可加入收藏\n九份 已收藏
+
+
+標準輸入範例 2：
+
+spots = [Spot("墾丁", True), Spot("阿里山", False)]
+
+
+預期輸出 2：
+
+墾丁 已收藏\n阿里山 可加入收藏
+'''

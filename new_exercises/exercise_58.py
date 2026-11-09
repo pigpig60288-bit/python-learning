@@ -1,20 +1,34 @@
-# 教學：在方法中走訪數字清單時，可以用累加器加總。
-# 累加器先設為 0，每次迴圈把目前數字加進去。
-# 範例：
-# class Pantry:
-#     def __init__(self):
-#         self.can_counts = [2, 4, 3]
-#
-#     def total_cans(self):
-#         total = 0
-#         for count in self.can_counts:
-#             total += count
-#         print(total)
-#
-# Pantry().total_cans()
-# total 會累積清單中的每個數字。
-#
-# 題目 58：計算每日步數總和
-# 定義 Walker 類別，讓 __init__ 接收 steps 清單並存成屬性。
-# 新增 show_total 方法，使用 for 迴圈和累加器計算總步數並印出。
-# 建立物件並傳入 [120, 250, 180]，再呼叫 show_total。
+'''
+教學：累加器能把每個數值加起來，最後得到總和。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 58：計算每日步數總和
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+steps = [2000, 5000, 1500]
+
+
+預期輸出 1：
+
+總步數：8500
+
+
+標準輸入範例 2：
+
+steps = [3000, 3500, 1200]
+
+
+預期輸出 2：
+
+總步數：7700
+'''

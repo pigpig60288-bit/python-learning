@@ -1,21 +1,34 @@
-# 教學：篩選物件後，可以呼叫它的方法修改自己的資料。
-# 範例：
-# class Score:
-#     def __init__(self, points):
-#         self.points = points
-#
-#     def add_bonus(self):
-#         self.points += 2
-#
-# scores = [Score(5), Score(9)]
-# for score in scores:
-#     if score.points < 7:
-#         score.add_bonus()
-# 條件成立的物件才會增加 points。
-#
-# 題目 69：替低電量裝置充電
-# 定義 Device 類別，使用 __init__ 儲存 name 和 battery。
-# 新增 charge 方法，將 battery 增加 10。
-# 建立至少三個 Device 物件放入 devices 清單；
-# 用 for 走訪，只對 battery 小於 30 的裝置呼叫 charge。
-# 最後逐一印出所有裝置的 name 和 battery。
+'''
+教學：用條件判斷可找出哪些裝置需要充電。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 69：替低電量裝置充電
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+devices = [Device("平板", 12), Device("電子書", 80)]
+
+
+預期輸出 1：
+
+平板 需要充電\n電子書 不需要充電
+
+
+標準輸入範例 2：
+
+devices = [Device("手機", 18), Device("耳機", 90)]
+
+
+預期輸出 2：
+
+手機 需要充電\n耳機 不需要充電
+'''

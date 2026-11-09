@@ -1,19 +1,34 @@
-# 教學：可在走訪物件時先篩選，再把符合條件物件的數值加進總和。
-# 範例：
-# class Plant:
-#     def __init__(self, ripe, fruits):
-#         self.ripe = ripe
-#         self.fruits = fruits
-#
-# plants = [Plant(True, 4), Plant(False, 3), Plant(True, 2)]
-# total = 0
-# for plant in plants:
-#     if plant.ripe:
-#         total += plant.fruits
-# print(total)
-# total 只加總成熟植物的 fruits。
-#
-# 題目 89：計算通過檢查的包裹總重量
-# 定義 Parcel 類別，使用 __init__ 儲存 passed_inspection 和 weight。
-# 建立至少三個 Parcel 物件放入 parcels 清單。
-# 用 for 只累加 passed_inspection 為 True 的包裹重量，最後印出總重量。
+'''
+教學：累加器可算出通過檢查的總重量，最後輸出。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 89：計算通過檢查的包裹總重量
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+parcels = [Parcel("P001", 2.3), Parcel("P002", 4.8)]
+
+
+預期輸出 1：
+
+通過檢查的包裹總重量：2.3 kg
+
+
+標準輸入範例 2：
+
+parcels = [Parcel("P003", 1.5), Parcel("P004", 2.1)]
+
+
+預期輸出 2：
+
+通過檢查的包裹總重量：1.5 kg
+'''

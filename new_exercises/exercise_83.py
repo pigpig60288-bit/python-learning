@@ -1,18 +1,34 @@
-# 教學：可用方法把新項目加入物件清單，並用 in 檢查某項資料是否存在。
-# 範例：
-# class Board:
-#     def __init__(self):
-#         self.notes = []
-#
-#     def add_note(self, note):
-#         self.notes.append(note)
-#
-# board = Board()
-# board.add_note("打電話")
-# print("打電話" in board.notes)
-# in 會檢查指定文字是否出現在清單裡。
-#
-# 題目 83：管理每日任務
-# 定義 Planner 類別，建立空的 tasks 清單。
-# 新增 add_task 方法加入任務，新增 has_task 方法用 in 檢查任務。
-# 加入兩項任務，並檢查其中一項存在的任務。
+'''
+教學：任務可用物件儲存狀態，再用迴圈整理。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 83：管理每日任務
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+tasks = [Task("閱讀", True), Task("運動", False)]
+
+
+預期輸出 1：
+
+閱讀 已完成\n運動 未完成
+
+
+標準輸入範例 2：
+
+tasks = [Task("打掃", True), Task("整理", True)]
+
+
+預期輸出 2：
+
+打掃 已完成\n整理 已完成
+'''

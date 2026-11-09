@@ -1,17 +1,34 @@
-# 教學：and 可以要求兩個條件同時成立，才處理該物件。
-# 範例：
-# class Plant:
-#     def __init__(self, sunny, watered):
-#         self.sunny = sunny
-#         self.watered = watered
-#
-# plants = [Plant(True, True), Plant(True, False)]
-# for plant in plants:
-#     if plant.sunny and plant.watered:
-#         print("狀態良好")
-# 只有兩個屬性都符合條件時才會印出訊息。
-#
-# 題目 68：找出可參加活動的隊員
-# 定義 Player 類別，使用 __init__ 儲存 name、registered 和 paid。
-# 建立至少三個 Player 物件放入 players 清單。
-# 用 for 走訪，只在 registered 和 paid 都為 True 時印出隊員姓名。
+'''
+教學：判斷物件屬性後，只對符合條件的人輸出訊息。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 68：找出可參加活動的隊員
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+members = [Member("小白", True), Member("小明", False)]
+
+
+預期輸出 1：
+
+小白 可參加\n小明 不可參加
+
+
+標準輸入範例 2：
+
+members = [Member("阿慶", True), Member("玲玲", True)]
+
+
+預期輸出 2：
+
+阿慶 可參加\n玲玲 可參加
+'''

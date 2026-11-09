@@ -1,18 +1,34 @@
-# 教學：物件的方法可以透過 self 讀取這個物件自己的屬性。
-# 呼叫物件的方法時，Python 會自動把物件提供給 self。
-# 範例：
-# class Sign:
-#     def __init__(self, word):
-#         self.word = word
-#
-#     def show(self):
-#         print(self.word)
-#
-# sign = Sign("入口")
-# sign.show()
-# show 方法會印出這個 Sign 物件保存的文字。
-#
-# 題目 51：顯示樂器名稱
-# 定義 Instrument 類別，使用 __init__ 儲存 name。
-# 新增 show_name 方法，印出物件的 name。
-# 建立一個樂器物件並呼叫 show_name。
+'''
+教學：方法可以用 self 讀取物件自己的資料，呼叫時 Python 會自動把物件傳進去。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 51：顯示樂器名稱
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+instrument = Instrument("小提琴")
+
+
+預期輸出 1：
+
+小提琴
+
+
+標準輸入範例 2：
+
+instrument = Instrument("大提琴")
+
+
+預期輸出 2：
+
+大提琴
+'''

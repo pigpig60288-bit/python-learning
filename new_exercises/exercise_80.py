@@ -1,18 +1,34 @@
-# 教學：可走訪物件清單，用條件挑出物件，再增加符合條件的計數。
-# 範例：
-# class Candle:
-#     def __init__(self, hours):
-#         self.hours = hours
-#
-# candles = [Candle(5), Candle(2), Candle(8)]
-# count = 0
-# for candle in candles:
-#     if candle.hours >= 5:
-#         count += 1
-# print(count)
-# count 是符合 hours 門檻的物件數量。
-#
-# 題目 80：統計達到目標的閱讀紀錄
-# 定義 Reading 類別，使用 __init__ 儲存 title 和 pages。
-# 建立至少三個 Reading 物件放入 readings 清單。
-# 用 for 計算 pages 大於或等於 20 的紀錄數，最後印出數量。
+'''
+教學：累加器與條件判斷可計算哪些閱讀紀錄達到目標。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 80：統計達到目標的閱讀紀錄
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+records = [ReadingRecord("小明", 30), ReadingRecord("小華", 45)]
+
+
+預期輸出 1：
+
+小明 30 分鐘\n小華 45 分鐘
+
+
+標準輸入範例 2：
+
+records = [ReadingRecord("阿雯", 20), ReadingRecord("佩佩", 60)]
+
+
+預期輸出 2：
+
+阿雯 20 分鐘\n佩佩 60 分鐘
+'''

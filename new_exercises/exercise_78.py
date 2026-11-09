@@ -1,21 +1,34 @@
-# 教學：可以用多個計數器統計物件清單中不同的狀態。
-# 範例：
-# class Parcel:
-#     def __init__(self, delivered):
-#         self.delivered = delivered
-#
-# parcels = [Parcel(True), Parcel(False), Parcel(True)]
-# done = 0
-# waiting = 0
-# for parcel in parcels:
-#     if parcel.delivered:
-#         done += 1
-#     else:
-#         waiting += 1
-# print(done, waiting)
-# 兩個計數器分別記錄已送達和等待中的包裹。
-#
-# 題目 78：統計完成與未完成任務
-# 定義 Task 類別，使用 __init__ 儲存 is_done。
-# 建立至少四個 Task 物件放入 tasks 清單。
-# 用 for 迴圈分別計算已完成和未完成的數量，最後印出兩個數量。
+'''
+教學：計數器與條件判斷可用來統計是否完成任務。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 78：統計完成與未完成任務
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+tasks = [Task("整理資料", True), Task("回覆信件", False)]
+
+
+預期輸出 1：
+
+整理資料 已完成\n回覆信件 未完成
+
+
+標準輸入範例 2：
+
+tasks = [Task("讀書", True), Task("打掃", True)]
+
+
+預期輸出 2：
+
+讀書 已完成\n打掃 已完成
+'''

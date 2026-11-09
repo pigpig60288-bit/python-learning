@@ -1,18 +1,34 @@
-# 教學：物件方法可管理自己的清單；len() 可以取得清單項目數量。
-# 範例：
-# class Drawer:
-#     def __init__(self):
-#         self.tools = []
-#
-#     def add_tool(self, tool):
-#         self.tools.append(tool)
-#
-#     def show_count(self):
-#         print(len(self.tools))
-# 方法能先改變清單，再用 len() 顯示項目數。
-#
-# 題目 66：管理社團活動
-# 定義 Club 類別，使用 __init__ 建立空的 activities 清單。
-# 新增 add_activity 方法，接收活動名稱並加入清單。
-# 新增 show_count 方法，印出活動數量。
-# 建立 Club、加入兩個活動，再呼叫 show_count。
+'''
+教學：物件可保存活動資料，並讓程序依條件整理資訊。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 66：管理社團活動
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+activity = Activity("瑜珈", 12)
+
+
+預期輸出 1：
+
+活動：瑜珈，報名人數 12
+
+
+標準輸入範例 2：
+
+activity = Activity("烘焙", 8)
+
+
+預期輸出 2：
+
+活動：烘焙，報名人數 8
+'''

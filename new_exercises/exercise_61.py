@@ -1,18 +1,34 @@
-# 教學：走訪物件清單時，可檢查每個物件的屬性，只處理符合條件的物件。
-# 範例：
-# class Package:
-#     def __init__(self, label, fragile):
-#         self.label = label
-#         self.fragile = fragile
-#
-# packages = [Package("A", True), Package("B", False)]
-# for package in packages:
-#     if package.fragile:
-#         print(package.label)
-# 只有 fragile 為 True 的包裹會被列出。
-#
-# 題目 61：列出需要充電的裝置
-# 定義 Device 類別，使用 __init__ 儲存 name 和 battery。
-# 新增 show_name 方法，印出裝置名稱。
-# 建立至少三個 Device 物件放入 devices 清單，
-# 用 for 走訪，只對 battery 小於 20 的裝置呼叫 show_name。
+'''
+教學：條件判斷可以幫你決定哪些物件需要額外處理。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 61：列出需要充電的裝置
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+devices = [Device("手機", 15), Device("平板", 22)]
+
+
+預期輸出 1：
+
+手機 需要充電\n平板 已充電
+
+
+標準輸入範例 2：
+
+devices = [Device("筆電", 30), Device("耳機", 12)]
+
+
+預期輸出 2：
+
+筆電 不需要充電\n耳機 需要充電
+'''

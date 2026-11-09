@@ -1,17 +1,34 @@
-# 教學：走訪物件清單時，可以把每個物件的數字屬性累加。
-# 範例：
-# class Parcel:
-#     def __init__(self, weight):
-#         self.weight = weight
-#
-# parcels = [Parcel(2), Parcel(5)]
-# total = 0
-# for parcel in parcels:
-#     total += parcel.weight
-# print(total)
-# 每一輪都把目前物件的 weight 加入 total。
-#
-# 題目 67：計算書籍總頁數
-# 定義 Book 類別，使用 __init__ 儲存 pages。
-# 建立至少三本 Book 物件放入 books 清單。
-# 使用 for 和累加器計算所有書的總頁數並印出。
+'''
+教學：累加器可把每個物件的頁數加起來，最後得到總頁數。
+範例：
+
+
+class Example:
+
+
+def demo(self):
+print("這是一個簡單示例")
+
+
+題目 67：計算書籍總頁數
+請依照題意完成程式。
+
+標準輸入範例 1：
+
+books = [Book("Python 入門", 120), Book("資料結構", 240)]
+
+
+預期輸出 1：
+
+總頁數：360
+
+
+標準輸入範例 2：
+
+books = [Book("美術史", 100), Book("世界地圖", 180)]
+
+
+預期輸出 2：
+
+總頁數：280
+'''
