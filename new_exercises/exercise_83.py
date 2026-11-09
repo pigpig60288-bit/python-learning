@@ -1,20 +1,20 @@
 '''
-教學：這一題會用到篩選、統計與整理資料的思路。
-先把資料存成物件或清單，再用迴圈依序檢查每一筆資料。
-如果符合條件，就進行加總、計數、排序或刪除等處理。
-這樣寫法可以讓程式更容易閱讀，也更接近實際資料處理的流程。
+教學：把名稱與布林狀態放在物件中，方法可用 if/else 顯示文字狀態。
 
 範例：
-items = [
-    {"name": "A", "done": True, "points": 5},
-    {"name": "B", "done": False, "points": 3},
-]
+class Door:
+    def __init__(self, name, is_open):
+        self.name = name
+        self.is_open = is_open
 
-total = 0
-for item in items:
-    if item["done"]:
-        total += item["points"]
-print(total)
+    def show_status(self):
+        if self.is_open:
+            print(f"{self.name} 開著")
+        else:
+            print(f"{self.name} 關著")
+
+door = Door("後門", True)
+door.show_status()
 '''
 
 '''

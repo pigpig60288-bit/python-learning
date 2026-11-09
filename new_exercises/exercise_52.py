@@ -1,19 +1,18 @@
 '''
-教學：這一題會用到物件、清單與條件判斷。
-先把資料放進物件裡，再把物件存進清單，最後用 for 迴圈逐一取出。
-當你拿到某個物件時，可以用 if 檢查它的屬性，確認它是否符合條件。
-只有符合條件的物件才該被修改、計算或印出結果。
+教學：物件可以用多個屬性保存相關資料，方法可以用 f-string 顯示這些屬性。
+__init__ 的參數會在建立物件時提供；self.attribute 會把資料存進物件。
 
 範例：
-class Product:
-    def __init__(self, name, stock):
-        self.name = name
-        self.stock = stock
+class Game:
+    def __init__(self, title, players):
+        self.title = title
+        self.players = players
 
-items = [Product("杯子", 3), Product("筆記本", 7)]
-for item in items:
-    if item.stock < 5:
-        print(item.name)
+    def show_info(self):
+        print(f"{self.title}，玩家人數：{self.players}")
+
+game = Game("星球探險", 4)
+game.show_info()
 '''
 
 '''

@@ -1,19 +1,18 @@
 '''
-教學：這一題會用到物件、清單與條件判斷。
-先把資料放進物件裡，再把物件存進清單，最後用 for 迴圈逐一取出。
-當你拿到某個物件時，可以用 if 檢查它的屬性，確認它是否符合條件。
-只有符合條件的物件才該被修改、計算或印出結果。
+教學：方法可以修改物件自己的數值屬性。使用 += 會把新數值加到原本的值上。
 
 範例：
-class Product:
-    def __init__(self, name, stock):
+class Plant:
+    def __init__(self, name):
         self.name = name
-        self.stock = stock
+        self.water = 0
 
-items = [Product("杯子", 3), Product("筆記本", 7)]
-for item in items:
-    if item.stock < 5:
-        print(item.name)
+    def add_water(self, amount):
+        self.water += amount
+
+plant = Plant("薄荷")
+plant.add_water(2)
+print(plant.water)
 '''
 
 '''

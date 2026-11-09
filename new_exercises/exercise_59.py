@@ -1,19 +1,14 @@
 '''
-教學：這一題會用到物件、清單與條件判斷。
-先把資料放進物件裡，再把物件存進清單，最後用 for 迴圈逐一取出。
-當你拿到某個物件時，可以用 if 檢查它的屬性，確認它是否符合條件。
-只有符合條件的物件才該被修改、計算或印出結果。
+教學：計算符合條件的項目數量時，先用 0 當計數器；每次符合條件就加 1。
 
 範例：
-class Product:
-    def __init__(self, name, stock):
-        self.name = name
-        self.stock = stock
+ages = [12, 17, 21]
+count = 0
+for age in ages:
+    if age >= 18:
+        count += 1
 
-items = [Product("杯子", 3), Product("筆記本", 7)]
-for item in items:
-    if item.stock < 5:
-        print(item.name)
+print(f"成年人數：{count}")
 '''
 
 '''

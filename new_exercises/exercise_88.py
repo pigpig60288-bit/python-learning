@@ -1,20 +1,18 @@
 '''
-教學：這一題會用到篩選、統計與整理資料的思路。
-先把資料存成物件或清單，再用迴圈依序檢查每一筆資料。
-如果符合條件，就進行加總、計數、排序或刪除等處理。
-這樣寫法可以讓程式更容易閱讀，也更接近實際資料處理的流程。
+教學：若只統計布林屬性為 True 的物件，可在 for 迴圈中用 if 和計數器。
 
 範例：
-items = [
-    {"name": "A", "done": True, "points": 5},
-    {"name": "B", "done": False, "points": 3},
-]
+class Lamp:
+    def __init__(self, is_on):
+        self.is_on = is_on
 
-total = 0
-for item in items:
-    if item["done"]:
-        total += item["points"]
-print(total)
+lamps = [Lamp(True), Lamp(False), Lamp(True)]
+count = 0
+for lamp in lamps:
+    if lamp.is_on:
+        count += 1
+
+print(f"亮著的燈：{count}")
 '''
 
 '''

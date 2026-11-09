@@ -1,19 +1,20 @@
 '''
-教學：這一題會練習把資料整理成物件，然後用條件控制處理邏輯。
-每個物件可以存很多資訊，例如 name、score、stock、status 等屬性。
-用 for 迴圈走訪清單時，可以依序取出每個物件，再用 if 判斷它是否符合條件。
-如果符合條件，就更新資料、計算結果，或印出需要注意的內容。
+教學：物件可把名稱和數量存成屬性，方法用 if/else 依數量回報狀態。
 
 範例：
-class Student:
-    def __init__(self, name, score):
-        self.name = name
-        self.score = score
+class Box:
+    def __init__(self, label, count):
+        self.label = label
+        self.count = count
 
-students = [Student("小明", 90), Student("小華", 60)]
-for student in students:
-    if student.score >= 80:
-        print(student.name)
+    def show_status(self):
+        if self.count > 0:
+            print(f"{self.label} 有內容物")
+        else:
+            print(f"{self.label} 是空的")
+
+box = Box("藍盒", 2)
+box.show_status()
 '''
 
 '''

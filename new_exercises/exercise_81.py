@@ -1,20 +1,17 @@
 '''
-教學：這一題會用到篩選、統計與整理資料的思路。
-先把資料存成物件或清單，再用迴圈依序檢查每一筆資料。
-如果符合條件，就進行加總、計數、排序或刪除等處理。
-這樣寫法可以讓程式更容易閱讀，也更接近實際資料處理的流程。
+教學：把數字屬性逐一加入累加器，就能算出物件清單中的總和。
 
 範例：
-items = [
-    {"name": "A", "done": True, "points": 5},
-    {"name": "B", "done": False, "points": 3},
-]
+class Package:
+    def __init__(self, weight):
+        self.weight = weight
 
-total = 0
-for item in items:
-    if item["done"]:
-        total += item["points"]
-print(total)
+packages = [Package(2), Package(4)]
+total_weight = 0
+for package in packages:
+    total_weight += package.weight
+
+print(total_weight)
 '''
 
 '''
