@@ -36,3 +36,11 @@ movie = Movie("阿凡達", 2009)
 
 電影：阿凡達（2009）
 '''
+class Movie:
+    def __init__(self, name, year):
+        self.name = name
+        self.year = year
+    def show_info(self):
+        print(f"電影：{self.name}({self.year})")
+movie = Movie("阿凡達", 2009)
+movie.show_info()
