@@ -37,3 +37,25 @@ drinks = [Drink("果汁", 6, 5), Drink("牛奶", 2, 4), Drink("咖啡", 9, 5)]
 預期輸出 2：
 牛奶 目前剩 2，低於最低庫存 4
 '''
+
+
+class Drink:
+    def __init__(self, name, stock, min):
+        self.name = name
+        self.stock = stock
+        self.min = min
+    def show_warning(self):
+        if self.stock < self.min:
+            print(f"{self.name}目前剩{self.stock}，低於最低庫存{self.min}")
+
+drinks = [Drink("可樂", 3, 5), Drink("水", 8, 5), Drink("茶", 10, 5)]
+
+'''
+for i in range(len(drinks)):
+    drink = drinks[i]
+    if drink.stock < drink.min:
+        print(f"{drink.name}目前剩{drink.stock}，低於最低庫存{drink.min}")
+'''
+
+for drink in drinks:
+    drink.show_warning()
