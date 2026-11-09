@@ -8,8 +8,9 @@ class Example:
 
 def demo(self):
 print("這是一個簡單示例")
+'''
 
-
+'''
 題目 72：只有營業時才能增加來客數
 請依照題意完成程式。
 

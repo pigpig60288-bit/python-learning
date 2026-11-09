@@ -8,8 +8,9 @@ class Example:
 
 def demo(self):
 print("這是一個簡單示例")
+'''
 
-
+'''
 題目 74：計算達標的每日銷售量
 請依照題意完成程式。
 

@@ -8,8 +8,9 @@ class Example:
 
 def demo(self):
 print("這是一個簡單示例")
+'''
 
-
+'''
 題目 67：計算書籍總頁數
 請依照題意完成程式。
 

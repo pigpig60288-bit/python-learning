@@ -8,8 +8,9 @@ class Example:
 
 def demo(self):
 print("這是一個簡單示例")
+'''
 
-
+'''
 題目 56：檢查座位是否足夠
 請依照題意完成程式。
 

@@ -11,7 +11,9 @@ toys = [Toy("風箏", True), Toy("積木", False)]
 for toy in toys:
     if toy.is_new:
         print(toy.name)
+'''
 
+'''
 題目 49：找出庫存不足的商品
 定義 Product 類別，使用 __init__ 儲存 name 和 quantity。
 新增 show_warning 方法，印出商品名稱和目前庫存數量。

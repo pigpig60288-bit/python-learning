@@ -8,8 +8,9 @@ class Example:
 
 def demo(self):
 print("這是一個簡單示例")
+'''
 
-
+'''
 題目 59：計算高於標準的溫度筆數
 請依照題意完成程式。
 
