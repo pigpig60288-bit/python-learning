@@ -18,3 +18,15 @@
 # 定義 ClassRoom 類別，使用 __init__ 將 scores 清單存成物件屬性。
 # 新增 count_passed 方法，計算分數大於或等於 60 的項目數量並印出。
 # 建立一個物件，傳入分數清單 [72, 45, 88, 59]，呼叫 count_passed。
+class ClassRoom:
+    def __init__(self, scores):
+        self.scores = scores
+
+    def count_passed(self):
+        total = 0
+        for scores in self.scores:
+            if scores >= 60:
+                total += 1
+        print(total)
+classroom = ClassRoom([72, 45, 88, 59])
+classroom.count_passed()
