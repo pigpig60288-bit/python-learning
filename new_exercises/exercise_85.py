@@ -1,13 +1,5 @@
 '''
 教學：教室狀態可同時用多個條件判斷是否適合使用。
-範例：
-
-
-class Example:
-
-
-def demo(self):
-print("這是一個簡單示例")
 '''
 
 '''
@@ -18,16 +10,13 @@ print("這是一個簡單示例")
 
 classrooms = [Classroom("A101", True, True), Classroom("B205", True, False)]
 
-
 預期輸出 1：
 
 A101 可使用\nB205 已滿
 
-
 標準輸入範例 2：
 
 classrooms = [Classroom("C303", False, True), Classroom("D404", True, True)]
-
 
 預期輸出 2：
 

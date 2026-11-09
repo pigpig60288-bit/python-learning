@@ -1,13 +1,5 @@
 '''
 教學：任務可用物件儲存狀態，再用迴圈整理。
-範例：
-
-
-class Example:
-
-
-def demo(self):
-print("這是一個簡單示例")
 '''
 
 '''
@@ -18,16 +10,13 @@ print("這是一個簡單示例")
 
 tasks = [Task("閱讀", True), Task("運動", False)]
 
-
 預期輸出 1：
 
 閱讀 已完成\n運動 未完成
 
-
 標準輸入範例 2：
 
 tasks = [Task("打掃", True), Task("整理", True)]
-
 
 預期輸出 2：
 

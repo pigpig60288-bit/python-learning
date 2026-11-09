@@ -1,13 +1,5 @@
 '''
 教學：計數器與條件判斷可用來統計是否完成任務。
-範例：
-
-
-class Example:
-
-
-def demo(self):
-print("這是一個簡單示例")
 '''
 
 '''
@@ -18,16 +10,13 @@ print("這是一個簡單示例")
 
 tasks = [Task("整理資料", True), Task("回覆信件", False)]
 
-
 預期輸出 1：
 
 整理資料 已完成\n回覆信件 未完成
 
-
 標準輸入範例 2：
 
 tasks = [Task("讀書", True), Task("打掃", True)]
-
 
 預期輸出 2：
 

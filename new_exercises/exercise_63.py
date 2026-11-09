@@ -1,13 +1,5 @@
 '''
 教學：用 += 可以把新值累加到物件原本的資料。
-範例：
-
-
-class Example:
-
-
-def demo(self):
-print("這是一個簡單示例")
 '''
 
 '''
@@ -18,16 +10,13 @@ print("這是一個簡單示例")
 
 flowers = [Flower(2), Flower(5), Flower(1)]
 
-
 預期輸出 1：
 
 總花朵數：8
 
-
 標準輸入範例 2：
 
 flowers = [Flower(4), Flower(3)]
-
 
 預期輸出 2：
 

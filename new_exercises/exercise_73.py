@@ -1,13 +1,5 @@
 '''
 教學：可把人名與是否參加的狀態一起存入物件。
-範例：
-
-
-class Example:
-
-
-def demo(self):
-print("這是一個簡單示例")
 '''
 
 '''
@@ -18,16 +10,13 @@ print("這是一個簡單示例")
 
 participants = [Participant("小榮", True), Participant("小文", False)]
 
-
 預期輸出 1：
 
 小榮 已參加\n小文 未參加
 
-
 標準輸入範例 2：
 
 participants = [Participant("阿傑", True), Participant("依依", True)]
-
 
 預期輸出 2：
 

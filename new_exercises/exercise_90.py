@@ -1,13 +1,5 @@
 '''
 教學：可把閱讀紀錄當作物件，依條件篩選並累加頁數。
-範例：
-
-
-class Example:
-
-
-def demo(self):
-print("這是一個簡單示例")
 '''
 
 '''
@@ -18,16 +10,13 @@ print("這是一個簡單示例")
 
 records = [ReadingRecord("小明", 30), ReadingRecord("小華", 45)]
 
-
 預期輸出 1：
 
 小明 30 分鐘\n小華 45 分鐘
 
-
 標準輸入範例 2：
 
 records = [ReadingRecord("阿雯", 20), ReadingRecord("佩佩", 60)]
-
 
 預期輸出 2：
 

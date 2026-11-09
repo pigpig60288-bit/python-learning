@@ -1,16 +1,5 @@
 '''
-教學：走訪物件清單時，可以用 if 檢查每個物件的屬性，
-只對符合條件的物件執行方法。
-範例：
-class Toy:
-    def __init__(self, name, is_new):
-        self.name = name
-        self.is_new = is_new
-
-toys = [Toy("風箏", True), Toy("積木", False)]
-for toy in toys:
-    if toy.is_new:
-        print(toy.name)
+教學：走訪物件清單時，可以用 if 檢查每個物件的屬性，並只對符合條件的物件呼叫方法。
 '''
 
 '''

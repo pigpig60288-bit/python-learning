@@ -1,13 +1,5 @@
 '''
 教學：把多個物件放進清單後，再用迴圈逐一處理。
-範例：
-
-
-class Example:
-
-
-def demo(self):
-print("這是一個簡單示例")
 '''
 
 '''
@@ -18,16 +10,13 @@ print("這是一個簡單示例")
 
 machines = [Machine("A", "正常"), Machine("B", "故障")]
 
-
 預期輸出 1：
 
 A 正常\nB 故障
 
-
 標準輸入範例 2：
 
 machines = [Machine("C", "正常"), Machine("D", "故障")]
-
 
 預期輸出 2：
 

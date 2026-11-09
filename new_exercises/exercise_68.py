@@ -1,13 +1,5 @@
 '''
 教學：判斷物件屬性後，只對符合條件的人輸出訊息。
-範例：
-
-
-class Example:
-
-
-def demo(self):
-print("這是一個簡單示例")
 '''
 
 '''
@@ -18,16 +10,13 @@ print("這是一個簡單示例")
 
 members = [Member("小白", True), Member("小明", False)]
 
-
 預期輸出 1：
 
 小白 可參加\n小明 不可參加
 
-
 標準輸入範例 2：
 
 members = [Member("阿慶", True), Member("玲玲", True)]
-
 
 預期輸出 2：
 
