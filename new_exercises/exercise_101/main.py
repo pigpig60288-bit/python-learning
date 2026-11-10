@@ -72,3 +72,11 @@ Customer 新增 buy 方法，接收 Product 物件。若顧客金額足夠且商
 金額不足，無法購買果汁
 小文剩餘金額 10
 '''
+from customer import Customer
+from product import Product
+
+ann = Customer("小安", 50)
+cookie = Product("餅乾",20,2)
+juice = Product("果汁",30,1)
+
+ann.buy(cookie,1)
