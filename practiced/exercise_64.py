@@ -38,3 +38,16 @@ member = Member("阿美", 0)
 
 阿美 不能借書
 '''
+class Member:
+    def __init__(self, name, borrowed_count):
+        self.name = name
+        self.borrowed_count = borrowed_count
+
+    def check_borrow(self):
+        if self.borrowed_count > 0:
+            print(f"{self.name}可以借書")
+        else:
+            print(f"{self.name}不能借書")
+
+member = Member("小明", 2)
+member.check_borrow()
