@@ -28,7 +28,8 @@ participants = [Participant("小榮", True), Participant("小文", False)]
 
 預期輸出 1：
 
-小榮 已參加\n小文 未參加
+小榮 已參加
+小文 未參加
 
 標準輸入範例 2：
 
@@ -36,5 +37,20 @@ participants = [Participant("阿傑", True), Participant("依依", True)]
 
 預期輸出 2：
 
-阿傑 已參加\n依依 已參加
+阿傑 已參加
+依依 已參加
 '''
+class Participant:
+    def __init__(self, name, attended):
+        self.name = name
+        self.attended = attended
+
+    def show_status(self):
+        if self.attended == True:
+            print(f"{self.name} 已參加")
+        else:
+            print(f"{self.name} 未參加")
+
+participants = [Participant("小榮", True), Participant("小文", False)]
+for participant in participants:
+    participant.show_status()
