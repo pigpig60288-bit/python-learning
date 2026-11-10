@@ -41,3 +41,17 @@ swimmer.show_distance()
 
 游泳距離：6
 '''
+class Swimmer:
+    def __init__(self, name):
+        self.name = name
+        self.distance = 0
+
+    def add_distance(self, amount):
+        self.distance += amount
+
+    def show_distance(self):
+        print(f"游泳距離:{self.distance}")
+
+swimmer = Swimmer("阿毛")
+swimmer.add_distance(5)
+swimmer.show_distance()
