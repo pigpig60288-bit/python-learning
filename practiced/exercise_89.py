@@ -38,3 +38,15 @@ parcels = [Parcel("P003", 1.5), Parcel("P004", 2.1)]
 
 通過檢查的包裹總重量：1.5 kg
 '''
+
+class Parcel:
+    def __init__(self, parcel_id, weight):
+        self.parcel_id = parcel_id
+        self.weight = weight
+
+parcels = [Parcel("P001", 2.3), Parcel("P002", 4.8)]
+total = 0
+for parcel in parcels:
+    if parcel.weight <= 3:
+        total += parcel.weight
+        print(f"通過檢查的包裹總重量：{total}")

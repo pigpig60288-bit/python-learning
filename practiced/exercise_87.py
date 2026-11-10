@@ -25,7 +25,8 @@ scores = [Score("小美", 87), Score("小華", 56)]
 
 預期輸出 1：
 
-小華 56\n小美 87
+小華 56
+小美 87
 
 標準輸入範例 2：
 
@@ -33,5 +34,16 @@ scores = [Score("安安", 92), Score("東東", 68)]
 
 預期輸出 2：
 
-東東 68\n安安 92
+東東 68
+安安 92
 '''
+class Score:
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+
+scores = [Score("小美", 87), Score("小華", 56)]
+scores.sort(key=lambda name:name.score)
+
+for number in scores:
+    print(number.name, number.score)

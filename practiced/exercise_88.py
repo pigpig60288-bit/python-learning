@@ -36,3 +36,15 @@ courses = [Course("歷史", True), Course("地理", True)]
 
 已完成課程：2 門
 '''
+
+class Course:
+    def __init__(self, name, is_done):
+        self.name = name
+        self.is_done = is_done
+
+count = 0
+courses = [Course("數學", True), Course("英文", False)]
+for course in courses:
+    if course.is_done:
+        count += 1
+print(f"已完成課程：{count}門")

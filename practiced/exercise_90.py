@@ -27,7 +27,8 @@ records = [ReadingRecord("小明", 30), ReadingRecord("小華", 45)]
 
 預期輸出 1：
 
-小明 30 分鐘\n小華 45 分鐘
+小明 30 分鐘
+小華 45 分鐘
 
 標準輸入範例 2：
 
@@ -35,5 +36,17 @@ records = [ReadingRecord("阿雯", 20), ReadingRecord("佩佩", 60)]
 
 預期輸出 2：
 
-阿雯 20 分鐘\n佩佩 60 分鐘
+阿雯 20 分鐘
+佩佩 60 分鐘
 '''
+class ReadingRecord:
+    def __init__(self, name, minutes):
+        self.name = name
+        self.minutes = minutes
+
+    def show_info(self):
+        print(f"{self.name} {self.minutes} 分鐘")
+
+records = [ReadingRecord("小明", 30), ReadingRecord("小華", 45)]
+for record in records:
+    record.show_info()
