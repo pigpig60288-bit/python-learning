@@ -37,3 +37,15 @@ records = [ReadingRecord("阿雯", 20), ReadingRecord("佩佩", 60)]
 
 達標閱讀紀錄：1 筆
 '''
+class ReadingRecord:
+    def __init__(self, name, minutes):
+        self.name = name
+        self.minutes = minutes
+
+records = [ReadingRecord("小明", 30), ReadingRecord("小華", 45)]
+count = 0
+for record in records:
+    if record.minutes >= 30:
+        count += 1
+
+print(f"達標閱讀紀錄：{count}筆")
