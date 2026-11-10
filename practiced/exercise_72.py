@@ -29,7 +29,8 @@ customers[1].add_customers(5, True)
 
 預期輸出 1：
 
-小青 來客數：20\n小陳 來客數：5
+小青 來客數：20
+小陳 來客數：5
 
 標準輸入範例 2：
 
@@ -39,5 +40,21 @@ customers[1].add_customers(15, False)
 
 預期輸出 2：
 
-小美 來客數：10\n大文 來客數：0
+小美 來客數：10
+大文 來客數：0
 '''
+class Customer:
+    def __init__(self, name, count):
+        self.name = name
+        self.count = 0
+
+    def add_customers(self, amount, is_open):
+        if is_open:
+            self.count += amount
+
+customers = [Customer("小青", 0), Customer("小陳", 0)]
+customers[0].add_customers(20, True)
+customers[1].add_customers(5, True)
+
+for customer in customers:
+    print(f"{customer.name} 來客數：{customer.count}")
