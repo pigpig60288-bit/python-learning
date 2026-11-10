@@ -29,7 +29,8 @@ products = [Product("鉛筆", 4), Product("橡皮擦", 6)]
 
 預期輸出 1：
 
-鉛筆 有庫存\n橡皮擦 有庫存
+鉛筆 有庫存
+橡皮擦 有庫存
 
 標準輸入範例 2：
 
@@ -37,5 +38,20 @@ products = [Product("筆記本", 3), Product("色筆", 7)]
 
 預期輸出 2：
 
-筆記本 有庫存\n色筆 有庫存
+筆記本 有庫存
+色筆 有庫存
 '''
+class Product:
+    def __init__(self, name, quantity):
+        self.name = name
+        self.quantity = quantity
+
+    def show_status(self):
+        if self.quantity > 0:
+            print(f"{self.name} 有庫存")
+        else:
+            print(f"{self.name} 尚未補貨")
+
+products = [Product("鉛筆", 4), Product("橡皮擦", 6)]
+for product in products:
+    product.show_status()
