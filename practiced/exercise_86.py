@@ -40,3 +40,17 @@ warehouse.show_stock()
 
 B區 目前剩 7
 '''
+class Warehouse:
+    def __init__(self, name, quantity):
+        self.name = name
+        self.quantity = quantity
+
+    def use_stock(self, amount):
+        self.quantity -= amount
+
+    def show_stock(self):
+        print(f"{self.name} 目前剩{self.quantity}")
+
+warehouse = Warehouse("A區", 15)
+warehouse.use_stock(3)
+warehouse.show_stock()
