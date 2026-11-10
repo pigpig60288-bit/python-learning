@@ -28,7 +28,8 @@ tasks = [Task("整理資料", True), Task("回覆信件", False)]
 
 預期輸出 1：
 
-整理資料 已完成\n回覆信件 未完成
+整理資料 已完成
+回覆信件 未完成
 
 標準輸入範例 2：
 
@@ -36,5 +37,20 @@ tasks = [Task("讀書", True), Task("打掃", True)]
 
 預期輸出 2：
 
-讀書 已完成\n打掃 已完成
+讀書 已完成
+打掃 已完成
 '''
+class Task:
+    def __init__(self, name, is_done):
+        self.name = name
+        self.is_done = is_done
+
+    def show_status(self):
+        if self.is_done:
+            print(f"{self.name} 已完成")
+        else:
+            print(f"{self.name} 未完成")
+
+tasks = [Task("整理資料", True), Task("回覆信件", False)]
+for task in tasks:
+    task.show_status()
