@@ -36,3 +36,13 @@ activity = Activity("烘焙", 8)
 
 活動：烘焙，報名人數 8
 '''
+class Activity:
+    def __init__(self, name, participants):
+        self.name = name
+        self.participants = participants
+
+    def show_info(self):
+        print(f"活動：{self.name}，報名人數 {self.participants}")
+
+activity = Activity("瑜珈", 12)
+activity.show_info()
