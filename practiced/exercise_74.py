@@ -35,3 +35,12 @@ sales = [Sale("週三", 80), Sale("週四", 160)]
 
 達標的日子：週四
 '''
+class Sale:
+    def __init__(self, day, amount):
+        self.day = day
+        self.amount = amount
+
+sales = [Sale("週一", 120), Sale("週二", 90)]
+for sale in sales:
+    if sale.amount >= 100:
+        print(f"達標的日子：{sale.day}")
