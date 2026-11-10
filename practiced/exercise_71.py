@@ -35,3 +35,13 @@ meal = Meal("雞腿飯", 150)
 
 雞腿飯：150 元
 '''
+class Meal:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+    def show_info(self):
+        print(f"{self.name}：{self.price} 元")
+
+meal = Meal("漢堡", 120)
+meal.show_info()
