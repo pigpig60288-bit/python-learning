@@ -40,3 +40,18 @@ courses = [Course("歷史", True), Course("地理", True)]
 
 已完成：2 門，未完成：0 門
 '''
+class Course:
+    def __init__(self, name, is_done):
+        self.name = name
+        self.is_done = is_done
+
+courses = [Course("數學", True), Course("英文", False)]
+on_count = 0
+off_count = 0
+for course in courses:
+    if course.is_done:
+        on_count += 1
+    else:
+        off_count += 1
+
+print(f"已完成：{on_count}門，未完成：{off_count}門")
