@@ -28,7 +28,8 @@ members = [Member("小白", True), Member("小明", False)]
 
 預期輸出 1：
 
-小白 可參加\n小明 不可參加
+小白 可參加
+小明 不可參加
 
 標準輸入範例 2：
 
@@ -36,5 +37,19 @@ members = [Member("阿慶", True), Member("玲玲", True)]
 
 預期輸出 2：
 
-阿慶 可參加\n玲玲 可參加
+阿慶 可參加
+玲玲 可參加
 '''
+class Member:
+    def __init__(self, name, eligible):
+        self.name = name
+        self.eligible = eligible
+    def show_status(self):
+        if self.eligible == True:
+            print(f"{self.name} 可參加")
+        else:
+            print(f"{self.name} 不可參加")
+
+members = [Member("小白", True), Member("小明", False)]
+for member in members:
+    member.show_status()
