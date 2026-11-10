@@ -35,3 +35,13 @@ books = [Book("美術史", 100), Book("世界地圖", 180)]
 
 總頁數：280
 '''
+class Book:
+    def __init__(self, name, pages):
+        self.name = name
+        self.pages = pages
+
+total = 0
+books = [Book("Python 入門", 120), Book("資料結構", 240)]
+for book in books:
+    total += book.pages
+print(f"總頁數：{total}")
