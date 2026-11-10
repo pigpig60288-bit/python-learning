@@ -35,3 +35,14 @@ items = [Item("資料夾", 45), Item("白板筆", 25)]
 
 總價：70 元
 '''
+class Item:
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+total = 0
+items = [Item("筆記本", 30), Item("原子筆", 20)]
+
+for item in items:
+    total += item.price
+print(f"總價：{total} 元") 
