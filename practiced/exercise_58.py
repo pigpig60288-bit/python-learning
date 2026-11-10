@@ -31,3 +31,8 @@ steps = [3000, 3500, 1200]
 
 總步數：7700
 '''
+steps = [3000, 2300, 1500]
+total = 0
+for step in steps:
+    total += step
+print(f"總步數：{total}")
