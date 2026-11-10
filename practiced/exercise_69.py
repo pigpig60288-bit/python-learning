@@ -28,7 +28,8 @@ devices = [Device("平板", 12), Device("電子書", 80)]
 
 預期輸出 1：
 
-平板 需要充電\n電子書 不需要充電
+平板 需要充電
+電子書 不需要充電
 
 標準輸入範例 2：
 
@@ -36,5 +37,20 @@ devices = [Device("手機", 18), Device("耳機", 90)]
 
 預期輸出 2：
 
-手機 需要充電\n耳機 不需要充電
+手機 需要充電
+耳機 不需要充電
 '''
+class Device:
+    def __init__(self, name, level):
+        self.name = name
+        self.level = level
+
+    def show_status(self):
+        if self.level < 20:
+            print(f"{self.name} 需要充電")
+        else:
+            print(f"{self.name} 不需要充電")
+
+devices = [Device("平板", 12), Device("電子書", 80)]
+for device in devices:
+    device.show_status()
