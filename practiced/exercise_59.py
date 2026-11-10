@@ -32,3 +32,9 @@ temperatures = [20, 21, 24]
 
 高於標準的溫度：1 筆
 '''
+temperatures = [16, 20, 31]
+count = 0
+for temperature in temperatures:
+    if temperature > 23:
+        count += 1
+print(f"高於標準的溫度：{count}筆")
