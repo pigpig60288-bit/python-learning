@@ -33,3 +33,14 @@ machines = [Machine("C", "正常"), Machine("D", "故障")]
 
 C 正常\nD 故障
 '''
+class Machine:
+    def __init__(self, name, status):
+        self.name = name
+        self.status = status
+
+    def show_status(self):
+        print(f"{self.name} {self.status}")
+
+machines = [Machine("A", "正常"), Machine("B", "故障")]
+for machine in machines:
+    machine.show_status()
