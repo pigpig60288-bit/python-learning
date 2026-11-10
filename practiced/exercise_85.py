@@ -31,7 +31,8 @@ classrooms = [Classroom("A101", True, True), Classroom("B205", True, False)]
 
 預期輸出 1：
 
-A101 可使用\nB205 設備不足
+A101 可使用
+B205 設備不足
 
 標準輸入範例 2：
 
@@ -39,5 +40,23 @@ classrooms = [Classroom("C303", False, True), Classroom("D404", True, True)]
 
 預期輸出 2：
 
-C303 不可使用\nD404 可使用
+C303 不可使用
+D404 可使用
 '''
+class Classroom:
+    def __init__(self, name, is_available, has_equipment):
+        self.name = name
+        self.is_available = is_available
+        self.has_equipment = has_equipment
+
+    def show_status(self):
+        if self.is_available and self.has_equipment:
+            print(f"{self.name} 可使用")
+        elif self.has_equipment == False:
+            print(f"{self.name} 設備不足")
+        else:
+            print(f"{self.name} 不可使用")
+
+classrooms = [Classroom("A101", True, True), Classroom("B205", True, False)]
+for classroom in classrooms:
+    classroom.show_status()
