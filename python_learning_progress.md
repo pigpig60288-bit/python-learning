@@ -101,6 +101,11 @@
 - **第 98 題**：依汽車待修數量讓 Mechanic 物件進行維修並記錄次數。
 - **第 99 題**：依包裹送達狀態更新 Package 和 DeliveryDriver 物件。
 - **第 100 題**：讓 Order 物件保存多個 Product 物件並計算總額。
+- **第 101 題**：在不同檔案定義 Product 和 Customer 類別，讓顧客購買商品並搭配 `for`、`while` 和 `list`。
+- **第 102 題**：讓 LibraryMember 物件與 Book 物件互動，練習匯入類別、借閱清單及兩種迴圈。
+- **第 103 題**：讓 Gardener 物件與 Plant 物件互動，使用 `while` 收集植物、`list` 儲存並用 `for` 照顧植物。
+- **第 104 題**：讓 Caretaker 物件與 Pet 物件互動，使用清單收集寵物並以兩種迴圈處理。
+- **第 105 題**：讓 Coach 物件與 Athlete 物件互動，使用清單收集選手並以兩種迴圈處理。
 
 ## 更新原則
 
