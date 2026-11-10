@@ -35,3 +35,13 @@ flowers = [Flower(4), Flower(3)]
 
 總花朵數：7
 '''
+class Flower:
+    def __init__(self, count):
+        self.count = count
+
+flowers = [Flower(2), Flower(5), Flower(1)]
+total = 0
+for flower in flowers:
+    total += flower.count
+
+print(f"總花朵數：{total}")
