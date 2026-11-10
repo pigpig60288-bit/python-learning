@@ -34,3 +34,14 @@ books = [Book("白雪公主", 90), Book("小鹿斑比", 70)]
 
 白雪公主 90\n小鹿斑比 70
 '''
+class Book:
+    def __init__(self, name, pages):
+        self.name = name
+        self.pages = pages
+
+    def show_info(self):
+        print(f"{self.name}, {self.pages}")
+
+books = [Book("小王子", 120), Book("哈利波特", 350)]
+for book in books:
+    book.show_info()
