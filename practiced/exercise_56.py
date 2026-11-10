@@ -38,3 +38,16 @@ classroom = Classroom("B205", 5, 2)
 
 座位不足：2 個空位
 '''
+class Classroom:
+    def __init__(self, name, all, seat):
+        self.name = name
+        self.all = all
+        self.seat = seat
+
+    def check_seats(self):
+        if self.seat >= 5:
+            print(f"座位足夠：{self.seat}個空位")
+        else:
+            print(f"座位不足：{self.seat}個空位")
+classroom = Classroom("H101", 10, 4)
+classroom.check_seats()
