@@ -38,3 +38,15 @@ battery = Battery(80)
 
 電量足夠
 '''
+class Battery:
+    def __init__(self, level):
+        self.level = level
+
+    def check_level(self):
+        if self.level < 20:
+            print("電量偏低")
+        else:
+            print("電量足夠")
+
+battery = Battery(65)
+battery.check_level()
