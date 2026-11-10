@@ -35,3 +35,12 @@ orders = [Order("B001", 350), Order("B002", 520)]
 
 金額達標的訂單：B002
 '''
+class Order:
+    def __init__(self, order_id, amount):
+        self.order_id = order_id
+        self.amount = amount
+
+orders = [Order("A001", 450), Order("A002", 280)]
+for order in orders:
+    if order.amount >= 400:
+        print(f"金額達標的訂單：{order.order_id}")
