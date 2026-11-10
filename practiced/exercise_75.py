@@ -25,7 +25,8 @@ routes = [Route("台北", 35), Route("桃園", 20)]
 
 預期輸出 1：
 
-台北：35 分鐘\n桃園：20 分鐘
+台北：35 分鐘
+桃園：20 分鐘
 
 標準輸入範例 2：
 
@@ -33,5 +34,15 @@ routes = [Route("高雄", 45), Route("台中", 30)]
 
 預期輸出 2：
 
-高雄：45 分鐘\n台中：30 分鐘
+高雄：45 分鐘
+台中：30 分鐘
 '''
+class Route:
+    def __init__(self, name, minutes):
+        self.name = name
+        self.minutes = minutes
+
+routes = [Route("台北", 35), Route("桃園", 20)]
+for route in routes:
+    if route.minutes >= 20:
+        print(f"{route.name}：{route.minutes}分鐘")
