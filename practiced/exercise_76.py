@@ -34,3 +34,11 @@ songs = [Song("你是我的眼"), Song("月亮代表我的心")]
 
 你是我的眼
 '''
+class Song:
+    def __init__(self, name):
+        self.name = name
+
+songs = [Song("月亮代表我的心"), Song("你是我的眼")]
+songs.pop()
+for song in songs:
+    print(song.name)
