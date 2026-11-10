@@ -28,7 +28,8 @@ spots = [Spot("日月潭", False), Spot("九份", True)]
 
 預期輸出 1：
 
-日月潭 可加入收藏\n九份 已收藏
+日月潭 可加入收藏
+九份 已收藏
 
 標準輸入範例 2：
 
@@ -36,5 +37,20 @@ spots = [Spot("墾丁", True), Spot("阿里山", False)]
 
 預期輸出 2：
 
-墾丁 已收藏\n阿里山 可加入收藏
+墾丁 已收藏
+阿里山 可加入收藏
 '''
+class Spot:
+    def __init__(self, name, is_favorite):
+        self.name = name
+        self.is_favorite = is_favorite
+
+    def show_status(self):
+        if self.is_favorite:
+            print(f"{self.name} 已收藏")
+        else:
+            print(f"{self.name} 可加入收藏")
+
+spots = [Spot("日月潭", False), Spot("九份", True)]
+for spot in spots:
+    spot.show_status()
