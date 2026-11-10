@@ -37,5 +37,19 @@ devices = [Device("筆電", 30), Device("耳機", 12)]
 
 預期輸出 2：
 
-筆電 不需要充電\n耳機 需要充電
+筆電 已充電\n耳機 需要充電
 '''
+class Device:
+    def __init__(self, name, level):
+        self.name = name
+        self.level = level
+
+    def show_status(self):
+        if self.level < 20:
+            print(f"{self.name}需要充電")
+        else:
+            print(f"{self.name}已充電")
+
+devices = [Device("手機", 15), Device("平板", 22)]
+for device in devices:
+    device.show_status()
