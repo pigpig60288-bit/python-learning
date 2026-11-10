@@ -25,12 +25,28 @@ homework = [Grade("小華", 88), Grade("小美", 70)]
 
 預期輸出 1：
 
-小華 已完成\n小美 未完成
+小華 已完成
+小美 未完成
 
 標準輸入範例 2：
 
 homework = [Grade("阿強", 95), Grade("志明", 60)]
 
 預期輸出 2：
-阿強 已完成\n志明 未完成
+阿強 已完成
+志明 未完成
 '''
+class Grade:
+    def __init__(self, name, score):
+        self.name = name
+        self.score = score
+
+    def show_status(self):
+        if self.score >= 80:
+            print(f"{self.name} 已完成")
+        else:
+            print(f"{self.name} 未完成")
+
+homework = [Grade("阿強", 95), Grade("志明", 60)]
+for work in homework:
+    work.show_status()
