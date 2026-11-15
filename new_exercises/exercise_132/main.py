@@ -1,14 +1,15 @@
 '''
-教學：遞迴呼叫完成後，還可以繼續執行後面的程式
+教學：先處理目前項目，再遞迴處理下一個項目
 
-函式呼叫自己後，會先完成下一層呼叫，再回到原本的位置繼續執行：
+每次先處理目前位置，再把位置加 1 傳給下一層。
+目前位置超過最後一站時，函式就停止：
 
-def show_shelves(number):
-    if number > 0:
-        show_shelves(number - 1)
-        print(f"第 {number} 層")
+def show_stops(current, last_stop):
+    if current <= last_stop:
+        print(f"抵達第 {current} 站")
+        show_stops(current + 1, last_stop)
 
-show_shelves(3)
+show_stops(2, 4)
 
 '''
 

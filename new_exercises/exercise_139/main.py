@@ -1,13 +1,15 @@
 '''
-教學：一個遞迴函式可以呼叫自己兩次
+教學：有些問題可以拆成兩種較小的情況
 
-有些問題可以拆成兩個較小問題，再合併兩個結果。每個分支都要逐漸靠近停止條件：
+例如一次可以爬 1 階或 2 階。到第 n 階的方法數，
+等於從前一階走 1 階的方法數，加上從前兩階走 2 階的方法數：
 
-def inspect_boxes(level):
-    if level > 0:
-        inspect_boxes(level - 1)
-        print(f"完成第 {level} 層")
-        inspect_boxes(level - 1)
+def ways_to_climb(stairs):
+    if stairs <= 2:
+        return stairs
+    return ways_to_climb(stairs - 1) + ways_to_climb(stairs - 2)
+
+print(ways_to_climb(4))
 
 '''
 

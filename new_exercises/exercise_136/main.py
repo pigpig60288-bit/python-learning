@@ -1,15 +1,16 @@
 '''
-教學：遞迴處理清單時，可以把索引當成參數
+教學：用索引遞迴加總清單
 
-每次呼叫都處理目前索引，再把索引加 1；索引到達清單長度時停止：
+索引到達清單長度時，表示沒有剩下的溫度，回傳 0。
+其他情況則把目前的溫度加上後面項目的總和：
 
-labels = ["入口", "走廊", "出口"]
-def show_labels(index):
-    if index < len(labels):
-        print(labels[index])
-        show_labels(index + 1)
+temperatures = [12, 18, 9]
+def total_temperature(index):
+    if index == len(temperatures):
+        return 0
+    return temperatures[index] + total_temperature(index + 1)
 
-show_labels(0)
+print(total_temperature(0))
 
 '''
 

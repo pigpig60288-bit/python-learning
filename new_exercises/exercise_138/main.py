@@ -1,12 +1,15 @@
 '''
-教學：整數除法和取餘數可以逐位處理數字
+教學：遞迴可以拆解代碼中的各位數字
 
-// 會取得整數除法的商，% 會取得餘數。例如 47 // 10 是 4，47 % 10 是 7。
-因此可以用它們分開一個兩位數的十位和個位：
+% 取得最右邊的數字，// 移除最右邊的數字。
+把最右邊的數字加上剩下部分的位數總和；小於 10 時就是停止條件：
 
-number = 47
-print(number // 10)
-print(number % 10)
+def sum_code_digits(code):
+    if code < 10:
+        return code
+    return code % 10 + sum_code_digits(code // 10)
+
+print(sum_code_digits(726))
 
 '''
 

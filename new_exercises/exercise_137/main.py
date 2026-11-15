@@ -1,15 +1,18 @@
 '''
-教學：遞迴函式可以依照目前項目選擇不同結果
+教學：遞迴走訪清單時，可以依目前項目決定是否計數
 
-處理清單時，可以先檢查目前項目，再把本次結果和後續遞迴結果合併：
+索引到達清單長度時，表示已經檢查完所有飲料。
+如果目前項目符合目標，就把 1 加到後續的計數結果：
 
-values = [4, 9, 2]
-def count_large(index):
-    if index == len(values):
+drinks = ["茶", "水", "茶"]
+def count_drinks(index, target):
+    if index == len(drinks):
         return 0
-    if values[index] >= 5:
-        return 1 + count_large(index + 1)
-    return count_large(index + 1)
+    if drinks[index] == target:
+        return 1 + count_drinks(index + 1, target)
+    return count_drinks(index + 1, target)
+
+print(count_drinks(0, "茶"))
 
 '''
 

@@ -1,15 +1,17 @@
 '''
-教學：return 可以把函式計算的結果交回呼叫處
+教學：遞迴可以把目前的數值加上較小問題的結果
 
-函式遇到 return 後會結束，並把後面的值交回去：
+遇到停止條件時回傳 0；其他情況則把目前回合的分數，
+加上前一回合累積的結果：
 
-def triple(number):
-    return number * 3
+def total_round_points(round_number):
+    if round_number == 0:
+        return 0
+    return round_number + total_round_points(round_number - 1)
 
-result = triple(4)
+result = total_round_points(3)
 print(result)
 
-遞迴函式也可以把下一層的結果交回來，再繼續計算。
 '''
 
 '''

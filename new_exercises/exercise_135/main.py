@@ -1,12 +1,15 @@
 '''
-教學：建立遞迴的基礎值
+教學：重複相乘可以用遞迴逐次完成
 
-有些遞迴計算在參數到達某個值時，答案是固定的。這個答案就是停止時回傳的基礎值：
+每次把目前的結果乘以 2，並把剩下的次數減少 1。
+次數到 0 時，尚未開始相乘的結果是 1：
 
-def count_down_steps(number):
-    if number == 0:
-        return 0
-    return 1 + count_down_steps(number - 1)
+def double_for_days(days):
+    if days == 0:
+        return 1
+    return 2 * double_for_days(days - 1)
+
+print(double_for_days(3))
 
 '''
 

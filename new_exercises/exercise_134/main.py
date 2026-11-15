@@ -1,14 +1,16 @@
 '''
-教學：遞迴計算可以把大問題拆成較小的同類問題
+教學：有些遞迴計算要把目前的數值乘上較小問題的結果
 
-先找出最小問題的答案作為停止條件，再把較大的問題轉成較小的問題：
+例如計算一排座位安排的組合數，每次都乘上目前的座位數。
+到沒有座位時，組合數是 1：
 
-def count_tiles(size):
-    if size == 0:
-        return 0
-    return 1 + count_tiles(size - 1)
+def seating_orders(seats):
+    if seats == 0:
+        return 1
+    return seats * seating_orders(seats - 1)
 
-這個函式每次把 size 減少 1，直到到達停止條件。
+print(seating_orders(3))
+
 '''
 
 '''
